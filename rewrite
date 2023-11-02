@@ -1,0 +1,12 @@
+[rewrite_remote]
+https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule, tag=bilibili去广告, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/BiliUniverse/Enhanced/raw/main/modules/BiliBili.Enhanced.snippet, tag=📺 BiliBili: ⚙️ Enhanced, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/raw/main/snippet/Siri.snippet, tag= iRingo: Siri & Search, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/raw/main/snippet/Location.snippet, tag= iRingo: Location & Map, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
+https://subweb.s3.fr-par.scw.cloud/Module/embyUnlocked.conf, tag=emby解锁, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Dualsub.snippet, tag=All in one翻译, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf, tag=Youtube 英文机翻中文, update-interval=172800, opt-parser=true, enabled=true
+https://service.2ti.st/QuanX/Rewrite/jd_tb_price.conf, tag=JD比价, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=AD, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
