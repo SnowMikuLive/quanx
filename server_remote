@@ -1,0 +1,3 @@
+[server_remote]
+https://zbudbq.sbs/?L1N1YnNjcmlwdGlvbi9TaGFkb3dSb2NrZXRJbXBvcnRTZXJ2aWNlP3NpZD00NDc3JnRva2VuPXU5bTVGVDNkY0YxJm1tPTE0NTYzJmM1#udp=1&tfo=1, tag=imm, update-interval=172800, opt-parser=true, enabled=true
+http://dy.sbgfw.info/api/v1/client/subscribe?token=7a6e96044a42267fd2eda7977087ffb2&udp=1&tfo=1, tag=大航海, update-interval=172800, opt-parser=true, enabled=true
