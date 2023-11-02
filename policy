@@ -1,0 +1,7 @@
+[policy]
+static=JP, server-tag-regex=JP, img-url=paperplane.circle.system
+static=Telegram, server-tag-regex=(.*?), img-url=paperplane.circle.fill.system
+static=Export, Select, JP, direct, img-url=network.system
+static=Select, server-tag-regex=(.*?), img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+static=Bilibili, direct, Export, Select, img-url=b.square.fill.system
+static=Apple, direct, Export, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
