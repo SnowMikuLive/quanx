@@ -1,0 +1,143 @@
+[general]
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me
+resource_parser_url= https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+profile_img_url=https://github.githubassets.com/images/modules/site/integrators/google.png
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+server_check_url=http://www.google.com/generate_204
+[dns]
+no-system
+prefer-doh3
+doh-server=https://dns.alidns.com/dns-query,https://dns.google/dns-query
+#doh-server=https://security.cloudflare-dns.com/dns-query
+#doh-server=https://dns.cloudflare.com/dns-query
+#doh-server=https://162.14.132.76/dns-query
+#doh-server=https://162.14.132.109/dns-query
+#doh-server=https://dh-dns.global-idc.net/dns-query
+[policy]
+static=JP, server-tag-regex=JP, img-url=paperplane.circle.system
+static=Telegram, server-tag-regex=(.*?), img-url=paperplane.circle.fill.system
+static=Export, Select, JP, direct, img-url=network.system
+static=Select, server-tag-regex=(.*?), img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+static=Bilibili, direct, Export, Select, img-url=b.square.fill.system
+static=Apple, direct, Export, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+[server_remote]
+
+[filter_remote]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/HoYoverse/HoYoverse.list, tag=HoYoverse, force-policy=Export, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/KugouKuwo/KugouKuwo.list, tag=酷酷狗, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/XianYu/XianYu.list, tag=咸鱼, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Tencent/Tencent.list, tag=Tencent, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/DouYin/DouYin.list, tag=抖音, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Alibaba/Alibaba.list, tag=Alibaba, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AliPay/AliPay.list, tag=AliPay, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/JingDong/JingDong.list, tag=JD, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleHardware/AppleHardware.list, tag=AppleHardware, force-policy=Apple, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleFirmware/AppleFirmware.list, tag=AppleFirmware, force-policy=Apple, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list, tag=Bilibili, force-policy=Bilibili, update-interval=172800, opt-parser=true, enabled=true
+https://core.telegram.org/resources/cidr.txt, tag=TG, force-policy=Telegram, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list, tag=WeChat, force-policy=direct, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=代理, force-policy=Export, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AdGuardSDNSFilter/Direct/Direct.list, tag=Direct, force-policy=direct, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt, tag=🚫 广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+[rewrite_remote]
+https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule, tag=bilibili去广告, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/BiliUniverse/Enhanced/raw/main/modules/BiliBili.Enhanced.snippet, tag=📺 BiliBili: ⚙️ Enhanced, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/raw/main/snippet/Siri.snippet, tag= iRingo: Siri & Search, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/raw/main/snippet/Location.snippet, tag= iRingo: Location & Map, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
+https://subweb.s3.fr-par.scw.cloud/Module/embyUnlocked.conf, tag=emby解锁, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Dualsub.snippet, tag=All in one翻译, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf, tag=Youtube 英文机翻中文, update-interval=172800, opt-parser=true, enabled=true
+https://service.2ti.st/QuanX/Rewrite/jd_tb_price.conf, tag=JD比价, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=AD, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+[server_local]
+
+[filter_local]
+host-keyword, toponadss, reject
+host-keyword, hybridbidding, reject
+host, userlink.alicdn.com, reject
+host-keyword, static.qiekj, reject
+ip-cidr, 121.36.43.0/24, reject
+ip-cidr, 122.9.121.0/24, reject
+ip-cidr, 124.71.205.0/24, reject
+ip-cidr, 122.9.124.0/24, reject
+host, acs.m.taobao.com, reject
+host, lf-cdn-tos.bytescm.com, reject
+host, restios.amap.com, reject
+ip-cidr, 122.9.125.0/24, reject
+ip-cidr, 122.9.111.0/24, reject
+ip-cidr, 122.9.125.0/24, reject
+ip-cidr, 122.9.96.0/24, reject
+host, dualstack-restios.amap.com, reject
+host-keyword, anythinktech, reject
+host, mores.toponad.com, reject
+host, qemyapi.qiekj.com, reject
+host, h-adashx4bc.ut.taobao.com, reject
+ip-cidr, 122.9.96.62/32, reject
+ip-cidr, 121.36.83.144/32, reject
+host, bgg.baidu.com, reject
+host, autopatchos.starrails.com, Select
+ip-cidr, 117.50.154.0/24, reject
+ip-cidr, 114.132.165.205/32, reject
+host-wildcard, sp*.baidu.com, reject
+host-wildcard, f*.baidu.com, reject
+host-suffix, tnc3-alisc1.zijieapi.com, reject
+host-suffix, mssdk.volces.com, reject
+host-keyword, 1rtb, reject
+host-wildcard, t*.baidu.com, reject
+host-suffix, hectorstatic.baidu.com, reject
+host-suffix, hector.baidu.com, reject
+host-suffix, m.baidu.com, reject
+host-keyword, pinduoduo, reject
+host-keyword, apple, Apple
+host-keyword, icloud, Apple
+host-keyword, hellobike, direct
+host-keyword, amap, direct
+ip-cidr, 43.156.222.154/26, direct
+host-keyword, goofish, direct
+host, ads.95516.com, direct
+host-keyword, cn, direct
+host-keyword, qq, direct
+host-keyword, wechat, direct
+host-keyword, caiyun, direct
+host-keyword, steam, Export
+host-keyword, baidu, direct
+geoip, cn, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+ip6-cidr,fe80::/10,direct
+ip6-cidr, ::1/128, direct
+ip6-cidr, fc00::/7, direct
+final, Export
+[rewrite_local]
+^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
+# 🔍 Siri Bag (iOS/macOS)
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/bag(\?.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/bag(\?.*)?$ url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# 🔍 Siri Spotlight & Look Up Search (iOS/macOS)
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/search(\?.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/search(\?.*)?$ url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# 🔍 Siri warm (unknown)
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/warm(\?.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+# 🔍 Siri render (unknown)
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/render(\?.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+# 🔍 Siri Flight Search (iOS/macOS)
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/flight(\?.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+# 🔍 Siri Siri Infomation Card (macOS)
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/card(\?.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/card(\?.*)?$ url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+[task_local]
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP 查询, img-url=location.fill.viewfinder.system
+[http_backend]
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, tag=BoxJs, path=^/, img-url=https://raw.githubusercontent.com/Orz-3/task/master/box.png, enabled=true
+[mitm]
+simple_cert_hostname=sub.store
+passphrase = 17EBB52D
+p12 = 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
+hostname = *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.huluim.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.cloudfront.net, *.akamaihd.net, *.avi-cdn.net, *.youtube.com, *google.cn, api.m.jd.com, me-api.jd.com,api*.smoot.apple.com, api*.smoot.apple.cn
