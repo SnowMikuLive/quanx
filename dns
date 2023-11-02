@@ -1,0 +1,4 @@
+[dns]
+no-system
+prefer-doh3
+doh-server=https://dns.alidns.com/dns-query,https://dns.google/dns-query
